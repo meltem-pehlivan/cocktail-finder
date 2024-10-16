@@ -1,0 +1,39 @@
+/* src/App.css */
+.App {
+  text-align: center;
+  background-color: #f0f8f4; /* Mint rengi */
+  color: #333; /* Koyu gri */
+  padding: 20px;
+}
+
+input {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50; /* Yeşil buton */
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049; /* Buton hover rengi */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 5px 0;
+  background: #e8e8e8; /* Açık gri arka plan */
+  padding: 10px;
+  border-radius: 5px;
+}
