@@ -115,6 +115,26 @@ li {
 li:hover {
   background: #dcdada; /* Hover için arka plan rengi */
 }
+@media (max-width: 768px) {
+  input {
+    width: 90%; /* Genişliği %90 yap */
+    margin-left: 10px; /* Sol marjı kaldır */
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 50%; /* Buton genişliği %90 */
+    margin-left: 100px;
+  }
+
+  ul {
+    grid-template-columns: 1fr; /* Tek sütun yap */
+  }
+
+  h1, p {
+    padding: 0 20px; /* Kenarlardan boşluk ver */
+  }
+}
 
 
 
