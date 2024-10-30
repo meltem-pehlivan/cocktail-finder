@@ -6,7 +6,8 @@ function App() {
 
   return (
        <div>
-       <h1>Kokteyl Tarif Bulucu</h1>
+       <h1>COCKTAIL & MORE</h1>
+       <p>Mükemmel Tarifler İçin Elindeki Malzemeleri Gir!</p>
        <CocktailInput/>
      </div>
   );

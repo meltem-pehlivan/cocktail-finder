@@ -26,7 +26,7 @@ const CocktailInput = () => {
       <form onSubmit={handleSubmit}>
         <input
           type="text"
-          placeholder="Malzemeleri girin (örneğin: limon, cin)"
+          placeholder="Malzemeleri gir (örneğin: limon şeker)"
           value={ingredients}
           onChange={handleChange}
         />
@@ -37,10 +37,10 @@ const CocktailInput = () => {
           <ul>
             {suggestions.map((cocktail, index) => (
               <li key={index}>
-                <strong>{cocktail.name}</strong>
+                <strong>{cocktail.name.toUpperCase()}</strong>
                 <ul>
                   {cocktail.ingredients.map((ingredient, i) => (
-                    <li key={i}>{ingredient.name}: {ingredient.amount}</li>
+                    <li key={i}> - {ingredient.name}: {ingredient.amount}</li>
                   ))}
                 </ul>
               </li>

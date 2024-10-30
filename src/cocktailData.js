@@ -5,7 +5,7 @@ const cocktailData = [
       ingredients: [
         { name: 'Cin', amount: '50 ml' },
         { name: 'Tonik', amount: '150 ml' },
-        { name: 'Lime', amount: '1 dilim' },
+        { name: 'Limon', amount: '1 dilim' },
         { name: 'Şeker', amount: 'isteğe bağlı' },
       ],
     },
@@ -14,7 +14,7 @@ const cocktailData = [
       ingredients: [
         { name: 'Rom', amount: '50 ml' },
         { name: 'Şeker', amount: '2 çay kaşığı' },
-        { name: 'Lime', amount: '1/2' },
+        { name: 'Limon', amount: '1/2' },
         { name: 'Nane', amount: '10 yaprak' },
         { name: 'Soda', amount: '150 ml' },
       ],
@@ -23,7 +23,7 @@ const cocktailData = [
       name: 'Daiquiri',
       ingredients: [
         { name: 'Rom', amount: '50 ml' },
-        { name: 'Lime', amount: '1' },
+        { name: 'Limon', amount: '1' },
         { name: 'Şeker', amount: '2 çay kaşığı' },
       ],
     },
@@ -31,7 +31,7 @@ const cocktailData = [
       name: 'Margarita',
       ingredients: [
         { name: 'Tekila', amount: '50 ml' },
-        { name: 'Lime', amount: '30 ml' },
+        { name: 'Limon', amount: '30 ml' },
         { name: 'Triple Sec', amount: '20 ml' },
         { name: 'Tuz', amount: 'kenar için' },
       ],
@@ -41,7 +41,7 @@ const cocktailData = [
       ingredients: [
         { name: 'Vodka', amount: '40 ml' },
         { name: 'Triple Sec', amount: '15 ml' },
-        { name: 'Lime', amount: '15 ml' },
+        { name: 'Limon', amount: '15 ml' },
         { name: 'Kızılcık Suyu', amount: '30 ml' },
       ],
     },

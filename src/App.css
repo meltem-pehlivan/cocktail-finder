@@ -1,39 +1,120 @@
 /* src/App.css */
 .App {
-  text-align: center;
-  background-color: #f0f8f4; /* Mint rengi */
-  color: #333; /* Koyu gri */
+  display: flex; /* Flexbox düzeni */
+  flex-direction: column; /* Dikey yönde hizala */
+  align-items: center; /* Ortaya hizala */
+  justify-content: center; /* Dikey ortalama */
+  min-height: 100vh; /* Tüm görünüm yüksekliği */
+  background-color: #c1c8c5; /* Mint rengi */
+  background-image: url("./../public/cocktail-photo.png");
+  color: #a5a4a4; /* Koyu gri */
   padding: 20px;
+}
+h1 {
+  text-align: center; /* Ortada hizala */
+  margin-bottom: 10px; /* H1 ile çizgi arasına boşluk */
+  color: rgb(42, 102, 106);
+}
+
+h1::after {
+  content: ''; /* Çizgi için içerik oluştur */
+  display: block; /* Blok öğesi yap */
+  width: 100%; /* Genişlik %100 */
+  max-width: fit-content; /* Text uzunluğuna göre ayarla */
+  height: 2px; /* Çizgi kalınlığı */
+  background-color: #d0d0d0; /* Açık gri */
+  margin: 0 auto; /* Ortala */
+}
+
+p {
+  text-align: center; /* Ortada hizala */
+  margin: 10px 0; /* P ile çizgi arasına boşluk */
+  color: rgb(68, 124, 128);
+}
+
+p::after {
+  content: ''; /* Çizgi için içerik oluştur */
+  display: block; /* Blok öğesi yap */
+  width: 100%; /* Genişlik %100 */
+  height: 2px; /* Çizgi kalınlığı */
+  background-color: #d0d0d0; /* Açık gri */
+  margin-top: 10px; /* P ile çizgi arasında boşluk */
+}
+
+.form-container {
+  display: flex; /* Flexbox düzeni */
+  flex-direction: column; /* Dikey yönde hizala */
+  align-items: center; /* Ortaya hizala */
 }
 
 input {
   padding: 10px;
-  margin: 10px;
+  margin-left: 550px; /* Dış boşluk */
+  margin-top: 35px;
   border-radius: 5px;
   border: 1px solid #ccc;
+  width: 300px; /* Input genişliği */
+  transition: border-color 0.3s; /* Geçiş efekti */
+}
+
+input:hover {
+  border-color: rgb(53, 120, 125); /* Hover rengi */
+}
+
+input:focus {
+  border-color: rgb(83, 150, 155); /* Focus rengi */
+  outline: none; /* Varsayılan outline'ı kaldır */
+  box-shadow: 0 0 5px rgb(53, 120, 125); 
 }
 
 button {
   padding: 10px 15px;
+  margin-left: 15px;
   border: none;
   border-radius: 5px;
-  background-color: #4caf50; /* Yeşil buton */
+  background-color: rgb(83, 150, 155); /* Buton rengi */
   color: white;
   cursor: pointer;
+  transition: background-color 0.3s; /* Geçiş efekti */
 }
 
 button:hover {
-  background-color: #45a049; /* Buton hover rengi */
+  background-color: rgb(53, 120, 125); /* Hover durumu için koyu renk */
+}
+
+button:focus {
+  outline: none; /* Varsayılan outline'ı kaldır */
+  box-shadow: 0 0 5px rgb(53, 120, 125); /* Hover rengine uygun gölge efekti */
+
 }
 
 ul {
   list-style-type: none;
-  padding: 0;
+  padding: 10px;
+  display: grid; /* Grid düzeni kullan */
+  grid-template-columns: repeat(2, 1fr); /* İki sütun oluştur */
+  gap: 10px; /* Sütunlar arasındaki boşluk */
+  width: 100%; /* Sabit genişlik */
+  max-width: 80%; /* Sayfanın %80'ini kapla */
+  margin: 20px auto 0; /* Üstte boşluk, yatayda ortala */
 }
 
 li {
-  margin: 5px 0;
   background: #e8e8e8; /* Açık gri arka plan */
   padding: 10px;
   border-radius: 5px;
+  transition: background-color 0.3s; /* Geçiş efekti */
+  display: flex; /* Flex düzeni kullan */
+  flex-direction: column; /* Dikey yönde hizala */
+  justify-content: flex-start; /* Üstten hizala */
+  position: relative; /* İkonun konumlandırılması için */
+  padding-left: 30px; /* İkon için sol dolgu */
 }
+
+
+li:hover {
+  background: #dcdada; /* Hover için arka plan rengi */
+}
+
+
+
