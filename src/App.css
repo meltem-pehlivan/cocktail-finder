@@ -1,69 +1,65 @@
-/* src/App.css */
 .App {
-  display: flex; /* Flexbox düzeni */
-  flex-direction: column; /* Dikey yönde hizala */
-  align-items: center; /* Ortaya hizala */
-  justify-content: center; /* Dikey ortalama */
-  min-height: 100vh; /* Tüm görünüm yüksekliği */
-  background-color: #c1c8c5; /* Mint rengi */
-  background-image: url("./../public/cocktail-photo.png");
-  color: #a5a4a4; /* Koyu gri */
+  min-height: 100vh;
+  background-color: hsl(154, 6%, 77%);
+  background-image: url("./../public/cocktail-photo.png"); 
+  color: #a5a4a4;
   padding: 20px;
 }
+
 h1 {
-  text-align: center; /* Ortada hizala */
-  margin-bottom: 10px; /* H1 ile çizgi arasına boşluk */
+  text-align: center;
+  margin-bottom: 10px;
   color: rgb(42, 102, 106);
 }
 
 h1::after {
-  content: ''; /* Çizgi için içerik oluştur */
-  display: block; /* Blok öğesi yap */
-  width: 100%; /* Genişlik %100 */
-  max-width: fit-content; /* Text uzunluğuna göre ayarla */
-  height: 2px; /* Çizgi kalınlığı */
-  background-color: #d0d0d0; /* Açık gri */
-  margin: 0 auto; /* Ortala */
+  content: '';
+  display: block;
+  width: 100%;
+  max-width: fit-content;
+  height: 2px;
+  background-color: #d0d0d0;
+  margin: 0 auto;
 }
 
 p {
-  text-align: center; /* Ortada hizala */
-  margin: 10px 0; /* P ile çizgi arasına boşluk */
+  text-align: center;
+  margin: 10px 0;
   color: rgb(68, 124, 128);
 }
 
 p::after {
-  content: ''; /* Çizgi için içerik oluştur */
-  display: block; /* Blok öğesi yap */
-  width: 100%; /* Genişlik %100 */
-  height: 2px; /* Çizgi kalınlığı */
-  background-color: #d0d0d0; /* Açık gri */
-  margin-top: 10px; /* P ile çizgi arasında boşluk */
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #d0d0d0;
+  margin-top: 10px;
 }
 
 .form-container {
-  display: flex; /* Flexbox düzeni */
-  flex-direction: column; /* Dikey yönde hizala */
-  align-items: center; /* Ortaya hizala */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 input {
   padding: 10px;
-  margin-left: 550px; /* Dış boşluk */
+  margin-left: 550px;
   margin-top: 35px;
   border-radius: 5px;
   border: 1px solid #ccc;
-  width: 300px; /* Input genişliği */
-  transition: border-color 0.3s; /* Geçiş efekti */
+  width: 300px;
+  transition: border-color 0.3s;
 }
 
 input:hover {
-  border-color: rgb(53, 120, 125); /* Hover rengi */
+  border-color: rgb(53, 120, 125);
 }
 
 input:focus {
-  border-color: rgb(83, 150, 155); /* Focus rengi */
-  outline: none; /* Varsayılan outline'ı kaldır */
+  border-color: rgb(83, 150, 155);
+  outline: none;
   box-shadow: 0 0 5px rgb(53, 120, 125); 
 }
 
@@ -72,69 +68,65 @@ button {
   margin-left: 15px;
   border: none;
   border-radius: 5px;
-  background-color: rgb(83, 150, 155); /* Buton rengi */
+  background-color: rgb(83, 150, 155);
   color: white;
   cursor: pointer;
-  transition: background-color 0.3s; /* Geçiş efekti */
+  transition: background-color 0.3s;
 }
 
 button:hover {
-  background-color: rgb(53, 120, 125); /* Hover durumu için koyu renk */
+  background-color: rgb(53, 120, 125);
 }
 
 button:focus {
-  outline: none; /* Varsayılan outline'ı kaldır */
-  box-shadow: 0 0 5px rgb(53, 120, 125); /* Hover rengine uygun gölge efekti */
-
+  outline: none;
+  box-shadow: 0 0 5px rgb(53, 120, 125);
 }
 
 ul {
   list-style-type: none;
   padding: 10px;
-  display: grid; /* Grid düzeni kullan */
-  grid-template-columns: repeat(2, 1fr); /* İki sütun oluştur */
-  gap: 10px; /* Sütunlar arasındaki boşluk */
-  width: 100%; /* Sabit genişlik */
-  max-width: 80%; /* Sayfanın %80'ini kapla */
-  margin: 20px auto 0; /* Üstte boşluk, yatayda ortala */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  width: 100%;
+  max-width: 80%;
+  margin: 20px auto 0;
 }
 
 li {
-  background: #e8e8e8; /* Açık gri arka plan */
+  background: #e8e8e8;
   padding: 10px;
   border-radius: 5px;
-  transition: background-color 0.3s; /* Geçiş efekti */
-  display: flex; /* Flex düzeni kullan */
-  flex-direction: column; /* Dikey yönde hizala */
-  justify-content: flex-start; /* Üstten hizala */
-  position: relative; /* İkonun konumlandırılması için */
-  padding-left: 30px; /* İkon için sol dolgu */
+  transition: background-color 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  padding-left: 30px;
 }
-
 
 li:hover {
-  background: #dcdada; /* Hover için arka plan rengi */
+  background: #dcdada;
 }
+
 @media (max-width: 768px) {
   input {
-    width: 90%; /* Genişliği %90 yap */
-    margin-left: 10px; /* Sol marjı kaldır */
+    width: 90%;
+    margin-left: 10px;
     margin-bottom: 10px;
   }
 
   button {
-    width: 50%; /* Buton genişliği %90 */
+    width: 50%;
     margin-left: 100px;
   }
 
   ul {
-    grid-template-columns: 1fr; /* Tek sütun yap */
+    grid-template-columns: 1fr;
   }
 
   h1, p {
-    padding: 0 20px; /* Kenarlardan boşluk ver */
+    padding: 0 20px;
   }
 }
-
-
-
